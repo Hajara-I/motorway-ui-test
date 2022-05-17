@@ -1,0 +1,132 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	background-color: yellow;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 100vw;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.acc-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 15%;
+	padding: 1%;
+	margin: 1%;
+	width: 50vw;
+}
+
+.accordion {
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	overflow: hidden;
+	width: 100%;
+	height: 85%;
+	flex-direction: row;
+}
+
+.accordion div {
+	width: 100%;
+	flex-grow: 1;
+	flex-shrink: 1;
+	overflow: hidden;
+	transition: all 0.3s ease;
+	border: 5px solid yellow;
+	position: relative;
+}
+
+.accordion div img {
+	width: 100%;
+	object-fit: cover;
+	filter: grayscale(100%);
+}
+
+.accordion > div:hover {
+	opacity: 100%;
+	cursor: pointer;
+	flex-shrink: 0.95;
+}
+
+.accordion div img:hover {
+	filter: none;
+}
+
+img {
+	height: 200px;
+}
+
+.pol-container {
+	height: 75%;
+	width: 75%;
+	overflow: hidden;
+	display: flex;
+	align-items: flex-start;
+}
+
+.polaroid-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-height: 95%;
+	width: 100%;
+}
+
+button {
+	margin: 3%;
+	padding: 0.75rem 1rem;
+	border: none;
+	border-radius: 0.317rem;
+	background-color: rgb(255, 234, 0);
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1rem;
+	line-height: 1.5;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: rgb(255, 200, 0);
+}
+
+.form {
+	background-color: white;
+	height: 15vh;
+	margin-bottom: 2%;
+	display: flex;
+	width: 90vw;
+	border-radius: 10px;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.form input {
+	background-color: white;
+	line-height: 1.5;
+	padding: 1%;
+	margin: 1%;
+	border: 1px solid rgb(161, 161, 26);
+	border-radius: 10px;
+}
+
+.range {
+	background-color: white;
+}
