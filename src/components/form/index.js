@@ -56,7 +56,7 @@ export default function Form() {
 					placeholder="Enter date of birth"
 				/>
 				<input
-					type="text"
+					type="color"
 					name="favColour"
 					id="favColour"
 					placeholder="Enter your fave colour"
